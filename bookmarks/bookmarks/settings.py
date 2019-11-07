@@ -26,8 +26,8 @@ SECRET_KEY = 'b4&ixp%mylp+$$6y&pdsq!z9v@68c8dynlqgk#t)9vm!%9-54q'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'mysite.com', 
-    'localhost', 
+    'mysite.com',
+    'localhost',
     '127.0.0.1',
     'c40ea972.ngrok.io'
 ]
@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'social_django',
     'images.apps.ImagesConfig',
+    'sorl.thumbnail',
 ]
 
 MIDDLEWARE = [
@@ -148,8 +149,8 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 # social auth settings
-SOCIAL_AUTH_FACEBOOK_KEY = '556568808452395' # Facebook App ID
-SOCIAL_AUTH_FACEBOOK_SECRET = '6835af890c3b8b90cca19eb0c6ed6025' # Facebook App Secret
+SOCIAL_AUTH_FACEBOOK_KEY = '' # Facebook App ID
+SOCIAL_AUTH_FACEBOOK_SECRET = '' # Facebook App Secret
 SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
 
 SOCIAL_AUTH_TWITTER_KEY = '' # Twitter Consumer Key
